@@ -111,9 +111,9 @@ else:
 
         else:
             logger.error(f"Could not copy '{filepath}'. File/dir non-existent.")
-            logger.info(f"Clearing output folder '{output_path}'")
-            for filename in os.listdir(output_path):
-                os.unlink(os.path.join(output_path, filename))
+            # logger.info(f"Clearing output folder '{output_path}'")
+            # for filename in os.listdir(output_path):
+            #     os.unlink(os.path.join(output_path, filename))
             # TODO Clear folder
             logger.warning("Exiting")
             exit()
@@ -121,5 +121,16 @@ else:
 # logger.info("Output generated")
 
 # TODO Export output
+if do_export:
+    # Check existence of export destination, is so then empty it, if not then create it
+    export_path = os.path.join(config['export_dest'], config['output_name'])
+    if os.path.isdir(export_path):
+        logger.info(f"Deleting export folder '{export_path}'")
+        clear_dir(export_path)
+    
+    # os.makedirs(output_path, exist_ok=True)
 
-
+    # Copy generated output files to output
+    logger.info(f"Exporting directory {filepath} to {export_path}")
+    # TODO Copy directory
+    shutil.copytree(output_path, export_path)
