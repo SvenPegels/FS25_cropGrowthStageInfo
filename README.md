@@ -1,0 +1,1 @@
+A Farming Simulator 25 mod displaying additional info about the field's crop growth stage.
