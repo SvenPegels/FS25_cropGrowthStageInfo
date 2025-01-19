@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="65">
+	<title>
+		<en>Crop Growth Stage Info</en>
+		<de>Pflanzenwachstumsphase Info</de>
+	</title>
+	<description>
+		<en><![CDATA[Displays the crop's exact growth stage in the field info panel, next to the total amount of growth stages before the crop is harvestable. 
+Additionally it displays if the crop can already be harvested with a forage harvester.
+
+It also shows whether narrow tires are required or not to prevent crop destruction.
+
+Changelog 1.1.0.0:
+Added required tire type
+Fixed compatibility issue with the Precision Farming DLC]]></en>
+		<de><![CDATA[Zeigt das genaue Wachstumsstadium der Pflanzen im Feldinfo-Feld neben der Gesamtzahl der Wachstumsphasen an, bevor die Pflanzen geerntet werden können. 
+Zusätzlich wird angezeigt, ob das Erntegut bereits mit einem Feldhäcksler geerntet werden kann.
+
+Es zeigt auch, ob schmale Reifen erforderlich sind oder nicht, um eine Zerstörung des Ernteguts zu verhindern.
+
+Changelog 1.1.0.0:
+Erforderlicher Reifentyp hinzugefügt
+Kompatibilitätsproblem mit dem Precision Farming DLC behoben]]></de>
+	</description>
+	<author>SvenP</author>
+	<version>1.1.0.0</version>
+	<iconFilename>icon_cropGrowthStageInfo.dds</iconFilename>
+	<multiplayer supported="true"/>
+
+	<extraSourceFiles>
+		<sourceFile filename="growthInfo.lua" />
+	</extraSourceFiles>
+
+	<l10n>
+		<text name="label_Growth_Stage">
+			<en><![CDATA[Growth stage]]></en>
+			<de><![CDATA[Wachstumsphase]]></de>
+		</text>
+		<text name="text_Foragable">
+			<en><![CDATA[Forage]]></en>
+			<de><![CDATA[Futter]]></de>
+		</text>
+		<text name="label_Required_Wheels">
+			<en><![CDATA[Required tires]]></en>
+			<de><![CDATA[Erforderliche Reifen]]></de>
+		</text>
+		<text name="text_Narrow_Wheels">
+			<en><![CDATA[Narrow only]]></en>
+			<de><![CDATA[Nur Pflegebereifung]]></de>
+		</text>
+		<text name="text_All_Wheels">
+			<en><![CDATA[All tires & tracks]]></en>
+			<de><![CDATA[Alle Reifen & Bandlaufwerk]]></de>
+		</text>
+	</l10n>
+</modDesc>
