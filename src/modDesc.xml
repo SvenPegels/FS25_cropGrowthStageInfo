@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="92">
+    <author>svenp</author>
+    <version>1.0.0.0</version>
+    <title>
+        <en>Crop Growth Stage Info</en>
+        <fr>Pflanzenwachstumsphase Info</fr>
+        <de>TODO</de>
+    </title>
+    <description>
+        <en><![CDATA[
+Description: Displays additional info about the crop's current growth stage in the field info panel.
+GitHub link: https://github.com/SvenPegels/FS25_cropGrowthStageInfo
+]]></en>
+        <fr><![CDATA[
+Description: TODO
+GitHub link: https://github.com/SvenPegels/FS25_cropGrowthStageInfo
+]]></fr>
+        <de><![CDATA[
+Beschreibung: TODO
+GitHub-Link: https://github.com/SvenPegels/FS25_cropGrowthStageInfo
+]]></de>
+    </description>
+    <iconFilename>icon_cropGrowthStageInfo.dds</iconFilename>
+    <multiplayer supported="true"/>
+    
+    <extraSourceFiles>
+        <sourceFile filename="growthInfo.lua" />
+    </extraSourceFiles>
+
+    <l10n>
+		<text name="label_Growth_Stage">
+			<en><![CDATA[Growth stage]]></en>
+			<de><![CDATA[Wachstumsphase]]></de>
+		</text>
+		<text name="text_Foragable">
+			<en><![CDATA[Forage]]></en>
+			<de><![CDATA[Futter]]></de>
+		</text>
+		<text name="label_Required_Wheels">
+			<en><![CDATA[Required tires]]></en>
+			<de><![CDATA[Erforderliche Reifen]]></de>
+		</text>
+		<text name="text_Narrow_Wheels">
+			<en><![CDATA[Narrow only]]></en>
+			<de><![CDATA[Nur Pflegebereifung]]></de>
+		</text>
+		<text name="text_All_Wheels">
+			<en><![CDATA[All tires & tracks]]></en>
+			<de><![CDATA[Alle Reifen & Bandlaufwerk]]></de>
+		</text>
+    </l10n>
+</modDesc>
